@@ -1,0 +1,78 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        script(src="design.scss")
+        script(src="anim.coffee")  
+    body 
+        .hero
+        .container
+        .column
+        h1 Welcome to CodePen Market!
+        p Si id dicis, vicimus. Quod quidem iam fit <a href="#">etiam in Academia</a>. Lorem ipsum dolor sit amet.
+
+        .column
+        .wv-tabs
+            .wv-tabs-header
+            .wv-tabs-header__tab.wv-tabs-header__tab--active(data-tab='1') User
+            .wv-tabs-header__tab(data-tab='2') Developer
+
+            .wv-tabs-content
+            .wv-tabs-content__panel.wv-tabs-content__panel--active(data-tab='1')
+                .wv-button-group
+                button.wv-button.wv-button--facebook
+                    i.fa.fa-facebook
+                    span Facebook
+
+                button.wv-button.wv-button--twitter
+                    i.fa.fa-twitter
+                    span Twitter
+
+                button.wv-button.wv-button--github
+                    i.fa.fa-github-alt
+                    span Github
+
+                button.wv-button.wv-button--google
+                    i.fa.fa-google
+                    span Google
+
+                .wv-divider
+
+                form.wv-form
+                input.wv-input(type="email"
+                                placeholder="Email Address")
+                input.wv-input(type="password"
+                                placeholder="Password")
+                button.wv-button(type="submit")
+                    span Sign In
+
+            .wv-tabs-content__panel(data-tab='2')
+                .wv-button-group.wv-button-group--developer
+                button.wv-button.wv-button--github
+                    i.fa.fa-github-alt
+                    span Github
+                    
+                button.wv-button.wv-button--facebook
+                    i.fa.fa-facebook
+                    span Facebook
+
+                button.wv-button.wv-button--twitter
+                    i.fa.fa-twitter
+                    span Twitter
+
+                button.wv-button.wv-button--google
+                    i.fa.fa-google
+                    span Google
+
+                .wv-divider
+
+                form.wv-form
+                input.wv-input(type="email"
+                                placeholder="Email Address")
+                input.wv-input(type="password"
+                                placeholder="Password")
+                button.wv-button(type="submit")
+                    span Sign In
