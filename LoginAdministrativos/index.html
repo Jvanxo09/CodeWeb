@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Script Language="JavaScript">
+        function DameLaFechaHora() {
+            var hora = new Date()
+            var hrs = hora.getHours();
+            var min = hora.getMinutes();
+            var hoy = new Date();
+            var m = new Array();
+            var d = new Array()
+            var an = hoy.getYear();
+            m[0] = "Enero";
+            m[1] = "Febrero";
+            m[2] = "Marzo";
+            m[3] = "Abril";
+            m[4] = "Mayo";
+            m[5] = "Junio";
+            m[6] = "Julio";
+            m[7] = "Agosto";
+            m[8] = "Septiembre";
+            m[9] = "Octubre";
+            m[10] = "Noviembre";
+            m[11] = "Diciembre";
+            document.write(" " + hrs + ":" + min + "                       ");
+            document.write(hoy.getDate());
+            document.write("-");
+            document.write(m[hoy.getMonth()]);
+            document.write("-");
+            document.write(hoy.getYear());
+        }
+    </Script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <script src="jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class='box-form'>
+            <div class='box-login-tab'></div>
+            <div class='box-login-title'>
+                <div class='i i-login'></div>
+                <h2>LOGIN</h2>
+            </div>
+            <div class='box-login'>
+                <div class="select"> <br> Sede: &nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="sede">
+                        <option value="1">Selecionar...</option>
+                        <option value="2">Trujillo</option> 
+                        <option value="3">Huamachuco</option> 
+                        <option value="4">Huancayo</option>
+                        <option value="5">Pierola - Trujillo</option> 
+                    </select>
+                    <i></i>
+                </div>
+
+                <div>
+                    <p>
+                        <label class='checkbox'>                        
+                            <input type='radio' name="Sede" id="sistema" value='Sistema'   /> SISTEMA <i></i>
+                            <input type='radio' name="Sede" id="admision" value='Admision'   /> ADMISION <i></i>
+                            <input type='radio' name="Sede" id="consultas" value='Consultas'  /> CONSULTAS <i></i>
+                        
+                        
+                        </label>
+                    </p>
+                </div>
+
+
+
+
+
+                <!-- <div>
+                    <div style="margin-left:auto; margin-right: auto;">
+                        <label class='checkbox'>
+                            <br>
+                        
+                            <input type='radio' value='TRUE' title='Keep me Signed in' /> SISTEMA
+                            <input type='radio' value='TRUE' title='Keep me Signed in' /> ADMISION
+                            <input type='radio' value='TRUE' title='Keep me Signed in' /> CONSULTAS<br>  
+                        
+                        
+                        </label>
+
+                    </div>
+
+                </div>-->
+                <div class='fieldset-body' id='login_form'>
+                    <!--<button onclick="openLoginInfo();" class='b b-form i i-more' title='Mais Informações'></button>-->
+                    <p class='field'>
+                        <label for='user'>USUARIO</label>
+                        <input type='text' id='user' name='user' title='Username' />
+                        <span id='valida' class='i i-warning'></span>
+                    </p>
+                    <p class='field'>
+                        <label for='pass'>CONTRASEÑA</label>
+                        <input type='password' id='pass' name='pass' title='Password' />
+                        <span id='valida' class='i i-close'></span>
+                    </p>
+
+                    <div>
+                        <script>
+                            DameLaFechaHora();
+                        </script>
+                    </div>
+
+                    <input type='submit' id='do_login' value='GET STARTED' title='Get Started' />
+                </div>
+            </div>
+
+
+        </div>
+        <!--
+        <div class='box-info'>
+            <p><button onclick="closeLoginInfo();" class='b b-info i i-left' title='Back to Sign In'></button>
+                <h3>Need Help?</h3>
+            </p>
+            <div class='line-wh'></div>
+            <button onclick="" class='b-support' title='Forgot Password?'> ¿Has olvidado tu contraseña?</button>
+            <button onclick="" class='b-support' title='Contact Support'> Contact Support</button>
+            <div class='line-wh'></div>
+            <button onclick="" class='b-cta' title='Sign up now!'> CREATE ACCOUNT</button>
+        </div>
+        -->
+    </div>
+
+    <!-- <div class='icon-credits'>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/budi-tanrim" title="Budi Tanrim">Budi Tanrim</a> & <a href="http://www.flaticon.com/authors/nice-and-serious" title="Nice and Serious">Nice and Serious</a>        from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
+</body>
+
+</html>
