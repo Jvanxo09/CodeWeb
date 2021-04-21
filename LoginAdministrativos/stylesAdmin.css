@@ -158,7 +158,7 @@ Login Box
 .box-login {
     position: relative;
     top: -4px;
-    width: 350px;
+    width: 320px;
     background: #fdfdfd;
     text-align: center;
     overflow: hidden;
@@ -177,8 +177,6 @@ Login Box
     box-shadow: 15px 30px 30px rgba(0, 0, 0, 0.32);
 }
 
-
-/*
 .box-info {
     width: 260px;
     top: 60px;
@@ -195,7 +193,6 @@ Login Box
     -moz-box-shadow: 15px 30px 30px rgba(0, 0, 0, 0.32);
     box-shadow: 15px 30px 30px rgba(0, 0, 0, 0.32);
 }
-*/
 
 .line-wh {
     width: 100%;
@@ -304,7 +301,6 @@ label.checkbox {
     float: left;
     padding: 5px 20px;
     line-height: 1.7;
-    margin-left: 1.8em;
 }
 
 input[type=text],
@@ -410,6 +406,3 @@ Credits
     text-decoration: none;
     color: rgba(255, 255, 255, 0.2);
 }
-
-
-/*    Select     */

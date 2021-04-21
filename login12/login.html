@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Login Example - Science</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="navigation_wrapper">
+            <div class="logo">Science</div>
+            <div class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Funding</a>
+            </div>
+        </div>
+    </div>
+    <div class="page_wrapper">
+
+        <!--MISSION STATEMENT-->
+        <div class="table_cell half">
+            <div class="content">
+                <div class="carousel">
+                    <div class="carousel_item_1" id="carousel_item_1">
+                        <h2>Only two things are infinite,</h2>
+                        <h3>the universe and human stupidity"</h3>
+                        <h4>-Albert Einstein</h4>
+
+                    </div>
+                    <div class="carousel_item_2" id="carousel_item_2">
+                        <h2>"The science of today </h2>
+                        <h3>is the technology of tomorrow."</h3>
+                        <h4>-Edward Teller</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"><img src="images/hex.png" class="hex"></div>
+            <div class="overlay_upside"><img src="images/hex2.png" class="hex_top"></div>
+            <div><img src="images/dna.png" class="hex overlay_right"></div>
+        </div>
+        <!--Login section-->
+        <div class="table_cell half right">
+            <div class="content">
+                <!--LOGIN-->
+                <input type="text" name="email" placeholder="  EMAIL">
+                <input type="password" name="password" placeholder="  PASSWORD">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+        <div class=" table">
+
+            <div class="table_cell quater"><a href="#">Home</a></div>
+            <div class="table_cell quater"><a href="#">About</a></div>
+            <div class="table_cell quater"><a href="#">Projects</a></div>
+            <div class="table_cell quater"><a href="#">Funding</a></div>
+        </div>
+    </div>
+
+    <script>
+        //add padlock next to code input if code input is there
+        var code = document.getElementsByName("code");
+        console.log(code[0].type);
+        if (code[0].type != "hidden") {
+
+            var my_elem = document.getElementsByName("code");
+            my_elem[0].insertAdjacentHTML('beforebegin', '<div class="code_label" ><img class="image" src="images/padlock.png"></div>');
+        }
+
+
+        //handle carousel text
+        var item1 = document.getElementById("carousel_item_1");
+        var item2 = document.getElementById("carousel_item_2");
+        var x = 1;
+        setInterval(function() {
+            console.log(x);
+            if (x == 1) {
+                swap_item("1");
+            } else {
+                x = 0;
+                swap_item("2");
+            }
+            x++;
+
+        }, 6000);
+
+        function swap_item(element) {
+            if (element == "1") {
+                item1.style.marginLeft = "-100%";
+                item2.style.marginLeft = "0%";
+            } else {
+                item1.style.marginLeft = "0%";
+                item2.style.marginLeft = "-100%";
+            }
+        }
+
+        //Hack to fix hover on element with inline color set on child element for facebook and email buttons
+        var fb_button = document.getElementById("facebook_button_initial");
+        var fb_text = document.getElementById("fbchkintxt");
+        var email_button = document.getElementById("email_button_initial");
+        var email_text = document.getElementById("emchkintxt");
+
+        if (fb_button) {
+            fb_button.onmouseover = function() {
+                fb_text.style.color = "#000";
+
+            };
+            fb_button.onmouseout = function() {
+                fb_text.style.color = "#fff";
+
+            };
+        }
+
+        if (email_button) {
+            email_button.onmouseover = function() {
+                email_text.style.color = "#000";
+
+            };
+            email_button.onmouseout = function() {
+                email_text.style.color = "#fff";
+
+            };
+        }
+    </script>
+</body>
+
+</html>

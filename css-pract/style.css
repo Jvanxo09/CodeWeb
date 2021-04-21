@@ -1,0 +1,18 @@
+body {
+    background: #FFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*Diseño del contenedor*/
+
+#container {
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+
+/*Diseño de las clases de etiquetas*/
+
+.article {}
