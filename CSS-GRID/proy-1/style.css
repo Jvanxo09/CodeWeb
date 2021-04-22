@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+body {
+    background-image: url(paul-gilmore-F1HO7lrwrE0-unsplash.jpg);
+    font-family: 'Dancing Script', cursive;
+    line-height: 1.6rem;
+    margin: 0;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    color: #f64c88;
+    background-color: rgba(210, 150, 100, .3)
+}
+
+nav {
+    background-color: transparent;
+    color: antiquewhite;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #99738e;
+    font-size: 20px;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #f64c88;
+}
+
+#presentacion {
+    background-image: url(paul-gilmore-F1HO7lrwrE0-unsplash.jpg);
+    min-height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#presentacion h2 {
+    color: #fff;
+    font-size: 50px;
+    line-height: 3.2rem;
+    padding-top: 30px;
+}
+
+main {
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    background-color: #f64c72;
+    color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #242582;
+    color: #ccc;
+    text-align: center;
+    padding: 5px;
+    margin-top: 40px;
+}
+
+@media(max-width: 600px) {
+    main,
+    aside {
+        width: 100%;
+        float: none;
+    }
+}
