@@ -1,0 +1,62 @@
+--- color (coloracion de letras o contenido)
+	color:red;		->nomre color
+	color: chocolate;	->nombre HTML5 color
+	color:rgb(0,255,0);	->valor RGB
+	color:#fff		->valor hexadecimal
+
+---- :hover  (modifica el diseño cuando el cursos para por encima)
+	ejemplo: h1:hover{
+			background-color:#333;
+			}
+
+---- font (tipo de letra y tamaños)
+	fon-family 	-> tipo de familia de letras
+	font-size:20px; ->tamaño de letra
+	font-weight: bold;	-> efecto
+	
+	font -> define todo lo anmterior d emanera completa
+	ejemplo:             size          family
+		font: Normal 20px Verdana, Geneva, sans-Serif;
+
+---- padding es el espacio quie hay entre el contenido y el borde
+	padding- -> top, right, bottom, left
+	
+---- margin es el espacio fuera del contenedor
+	margin- : -> top, right, bottom, left
+
+----- border (define los bordes del contenedor o caja)
+	border-: -> top, right, bottom, left
+	ejemplo: border-bottom: 8px blue solid;
+
+
+=============================================
+clase	| id     -->para seleccionar en css 
+la clase se selecciona con un . y el id con #
+=============================================
+
+display: flex; 	---> Se usa para manejar cajas en un solo bloque
+justify-content: space-between; ---> se usa para darle una separacion entre cjas
+flex-wrap: wrap; --> para hacer responsive las cajas almacenadas segun resolucion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

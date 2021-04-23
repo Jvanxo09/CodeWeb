@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Roboto+Slab:wght@300;400&display=swap');
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto-Regular', sans-serif;
+    line-height: 180%;
+    color: none;
+    text-align: center;
+}
+
+.foto1 {
+    background-image: url(img/stefano-valtorta-zfJMDR-btBg-unsplash.jpg);
+    min-height: 100%;
+}
+
+.foto2 {
+    background-image: url(img/rick-hatch-pQtSvopKxzM-unsplash.jpg);
+    min-height: 60%;
+}
+
+.foto3 {
+    background-image: url(img/nasa-NuE8Nu3otjo-unsplash.jpg);
+    min-height: 40%;
+}
+
+.foto4 {
+    background-image: url(img/jesus-eca-lnpoIeRj-rY-unsplash.jpg);
+    min-height: 100%;
+}
+
+.foto1,
+.foto2,
+.foto3,
+.foto4 {
+    position: relative;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.letrero {
+    color: #fbfbfb;
+    font-size: 550%;
+    top: 50%;
+}
+
+.letrero2 {
+    color: #c73256;
+    font-size: 450%;
+    top: 57%;
+}
+
+.letrero3 {
+    color: #d1345b;
+    font-size: 350%;
+    top: 64%;
+}
+
+.letrero,
+.letrero2,
+.letrero3,
+.letrero4 {
+    position: absolute;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-shadow: 0 0 10px #000;
+}
