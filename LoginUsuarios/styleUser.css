@@ -18,8 +18,9 @@ body {
     width: auto;
     height: auto;
     background-image: url(img/17010.jpg);
-    background-size: cover;
-    /*-webkit-filter: blur(5px);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(3px);
     z-index: 0;
 }
 
@@ -143,8 +144,10 @@ body {
         display: none;
     }
     .login {
-        left: auto;
-        justify-content: center;
-        align-items: center;
+        top: 0;
+        left: 0;
+        height: 150px;
+        width: 350px;
+        padding: 10px;
     }
 }
